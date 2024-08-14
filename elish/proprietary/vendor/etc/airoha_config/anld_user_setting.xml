@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CommonSetting> 
+  <output_debug_log>true</output_debug_log>  
+  <!-- OutputBinary must be set to true and should not be changed -->
+  <output_binary_log>true</output_binary_log>  
+  <epo_vendor_id>XIAOMI</epo_vendor_id>  
+  <epo_project_name>N6sFvU2TpHTBd_NW1BgugvvqhH8E3Jt70ZEapc8qkNg</epo_project_name>  
+  <epo_device_id>_RANDOM_</epo_device_id>  
+  <epo_file_path>/data/vendor/airoha/</epo_file_path>  
+  <!-- Set to -1 means disable -->
+  <debug_port>-1</debug_port>
+  <powergps_port>-1</powergps_port>
+  <raw_measurement_support>true</raw_measurement_support>  
+  <!-- the uart log will be store at /data/vendor/airoha/-->
+  <uart_log_record>true</uart_log_record> 
+  <!-- If this is change, 3335 must be reboot to ensure this configuration takes effect -->
+  <auto_lock_sleep>false</auto_lock_sleep>
+  <auto_download_epo>true</auto_download_epo>
+  <!--If true, anld will close uart when no data, and wait for interrupt-->
+  <wake_duration>1000</wake_duration>
+</CommonSetting>

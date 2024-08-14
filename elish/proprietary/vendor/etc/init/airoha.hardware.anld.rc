@@ -1,0 +1,12 @@
+on post-fs-data
+    mkdir /data/vendor/airoha 0771 gps system
+    mkdir /sdcard/vendor/ 0771 gps system
+	mkdir /sdcard/vendor/airoha 0771 gps system
+	chmod 777 /dev/airoha_gps 
+    chmod 777 /dev/ttyUSB0
+    chown gps gps /vendor/etc/airoha_config
+service airoha.anld-1-0 /vendor/bin/hw/airoha.hardware.anld
+    class main
+    user gps
+    group gps inet sdcard_r sdcard_rw misc system
+    socket app_anld stream 660 gps system

@@ -97,7 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/elish/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/xiaomi/elish/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/elish/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
-    vendor/xiaomi/elish/proprietary/vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc \
     vendor/xiaomi/elish/proprietary/vendor/etc/sensors/calibratedCheck.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/calibratedCheck.json \
     vendor/xiaomi/elish/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
     vendor/xiaomi/elish/proprietary/vendor/etc/sensors/config/bu27030_0_back.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bu27030_0_back.json \
@@ -407,7 +406,6 @@ PRODUCT_PACKAGES += \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    vendor.xiaomi.hardware.touchfeature@1.0-impl \
     libAF \
     libSNPE \
     lib_sr_models \
@@ -572,9 +570,7 @@ PRODUCT_PACKAGES += \
     airoha.hardware.anld \
     android.hardware.gnss@2.1-service-airoha \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
-    vendor.xiaomi.hardware.touchfeature@1.0-service \
     init.qcom.sensors \
     init.qti.chg_policy \
     sensors.qti \
-    sscrpcd \
-    toucheventcheck
+    sscrpcd

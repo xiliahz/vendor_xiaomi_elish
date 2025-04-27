@@ -189,7 +189,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     btaudio_offload_if \
-    sound_trigger.primary.kona \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     libFileMux_proprietary \
     libOmxAacDec \
@@ -673,3 +672,18 @@ PRODUCT_PACKAGES += \
     mlipayd@1.1 \
     slim_daemon
 endif
+
+PRODUCT_PACKAGES += \
+    vendor.qti.media.c2@1.0-service \
+    c2_manifest_vendor.xml \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \

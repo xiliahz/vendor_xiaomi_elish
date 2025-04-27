@@ -573,4 +573,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors \
     init.qti.chg_policy \
     sensors.qti \
-    sscrpcd
+    sscrpcd \
+    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    com.android.hotwordenrollment.common.util 

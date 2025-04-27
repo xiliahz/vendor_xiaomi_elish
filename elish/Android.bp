@@ -434,6 +434,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	relative_install_path: "camera/components",
 	prefer: true,
 	soc_specific: true,
@@ -4501,3 +4502,35 @@ cc_prebuilt_binary {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}

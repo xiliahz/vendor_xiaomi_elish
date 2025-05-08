@@ -296,7 +296,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/elish/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/xiaomi/elish/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/xiaomi/elish/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/xiaomi/elish/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml
+    vendor/xiaomi/elish/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/xiaomi/elish/proprietary/vendor/etc/displayconfig/display_id_19260527152667265.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_19260527152667265.xml \
+    vendor/xiaomi/elish/proprietary/vendor/etc/displayconfig/display_id_4630946481717202305.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946481717202305.xml \
+    vendor/xiaomi/elish/proprietary/vendor/etc/displayconfig/display_id_4630946545580055169.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946545580055169.xml 
 
 PRODUCT_PACKAGES += \
     libfcsam \
@@ -447,9 +450,6 @@ PRODUCT_PACKAGES += \
     libcamxstatscore \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
     libchilog \
     libcom.qti.chinodeutils \
     libcvface_api \
